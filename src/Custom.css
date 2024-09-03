@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 350px;
+  
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.inc-exp-container {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.money {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.money.plus {
+  color: #2ecc71;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.btna {
+  cursor: pointer;
+  background-color: #294d61;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btna:hover {
+  background-color: #272049;
+  border: 2px solid #20106e;
+  box-shadow: rgba(77, 94, 253, 0.12);
+}
+
+.btna:focus,
+.delete-btn:focus {
+  outline: none;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+
+  color: #2ecc71;
+}
+
+.list li.minus {
+ 
+  color: #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}
+.button-group {
+  display: flex;
+  width: 100%;
+}
+
+.button-group .a,
+.button-group .b {
+  flex: 1;
+  padding: 10px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #038931; 
+  border-radius: 2px;
+  
+}
+
+.button-group .a {
+  background-color: rgba(27, 173, 59, 0.58);
+  border: 0px solid rgba(27, 173, 59, 0.58);
+  box-shadow: 4px 4px rgb(183, 183, 183) ;
+
+}
+
+.button-group .b {
+  background-color: rgba(244, 67, 54, 0.58); 
+  border: 0px solid rgba(244, 67, 54, 0.58);
+  color: #99140c;
+  box-shadow: 4px 4px rgb(183, 183, 183) ;
+}
+.button-group .a:hover{
+  background-color: rgba(27, 173, 59, 1);
+  color: #fff;
+ 
+
+  
+}
+.button-group .b:hover{
+  background-color:rgba(244, 67, 54, 1);
+  color: #fff;
+  
+}
